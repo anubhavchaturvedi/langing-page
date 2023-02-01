@@ -1,0 +1,164 @@
+
+
+<html>
+    <head>
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: "Ubuntu";
+                background-color: white;
+                font-size: 80px;
+            }
+
+            h1 {
+                max-width: 40ch;
+                text-align: center;
+                transform: scale(0.94);
+                animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+            }
+
+            @keyframes scale {
+                100% {
+                    transform: scale(1.2);
+                }
+            }
+
+            span {
+                display: inline-block;
+                opacity: 0;
+                filter: blur(4px);
+            }
+
+            .hello {
+                font-size: 100%;
+            }
+
+            .message {
+                display: inline-block;
+                font-size: 50%;
+                opacity: 0;
+                filter: blur(4px);
+                padding: 3em;
+                animation-delay: 2.5s;
+                animation-name: fade-in;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+
+            .redirect-links {
+                font-size: 40%;
+                display: flex;
+                flex-flow: row;
+                width: 20em;
+                justify-content: space-evenly;
+                opacity: 0;
+
+                animation-delay: 4s;
+                animation-name: fade-in;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+
+            a {
+                width: 10em;
+                color: rgb(81, 81, 81);
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            span:nth-child(1) {
+                animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+            }
+
+            span:nth-child(2) {
+                animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+            }
+
+            span:nth-child(3) {
+                animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+            }
+
+            span:nth-child(4) {
+                animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+            }
+
+            span:nth-child(5) {
+                animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+            }
+
+            @keyframes fade-in {
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                }
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <h1 class="hello">
+            <span>Hi,</span>
+            <span>you</span>
+            <span>have</span>
+            <span>reached</span>
+            <span>Anubhav.</span>
+        </h1>
+
+        <p class="message">
+            Where would you like to go next . . .
+        </p>
+
+        <div class="redirect-links">
+            <a href="https://blog.anubhav.io" style="text-align: end;">
+                Blog Posts
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256"
+                    style="fill:#000000;">
+                    <g fill-opacity="0.27843" fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                        font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                        <g transform="scale(2,2)">
+                            <path
+                                d="M84,11c-1.7,0 -3,1.3 -3,3c0,1.7 1.3,3 3,3h22.80078l-46.40039,46.40039c-1.2,1.2 -1.2,3.09922 0,4.19922c0.6,0.6 1.39961,0.90039 2.09961,0.90039c0.7,0 1.49961,-0.30039 2.09961,-0.90039l46.40039,-46.40039v22.80078c0,1.7 1.3,3 3,3c1.7,0 3,-1.3 3,-3v-30c0,-1.7 -1.3,-3 -3,-3zM24,31c-7.2,0 -13,5.8 -13,13v60c0,7.2 5.8,13 13,13h60c7.2,0 13,-5.8 13,-13v-45c0,-1.7 -1.3,-3 -3,-3c-1.7,0 -3,1.3 -3,3v45c0,3.9 -3.1,7 -7,7h-60c-3.9,0 -7,-3.1 -7,-7v-60c0,-3.9 3.1,-7 7,-7h45c1.7,0 3,-1.3 3,-3c0,-1.7 -1.3,-3 -3,-3z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <span style="width: 5em;"></span>
+            <a href="https://photography.anubhav.io">
+                Photography
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256"
+                    style="fill:#000000;">
+                    <g fill-opacity="0.27843" fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                        font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                        <g transform="scale(2,2)">
+                            <path
+                                d="M84,11c-1.7,0 -3,1.3 -3,3c0,1.7 1.3,3 3,3h22.80078l-46.40039,46.40039c-1.2,1.2 -1.2,3.09922 0,4.19922c0.6,0.6 1.39961,0.90039 2.09961,0.90039c0.7,0 1.49961,-0.30039 2.09961,-0.90039l46.40039,-46.40039v22.80078c0,1.7 1.3,3 3,3c1.7,0 3,-1.3 3,-3v-30c0,-1.7 -1.3,-3 -3,-3zM24,31c-7.2,0 -13,5.8 -13,13v60c0,7.2 5.8,13 13,13h60c7.2,0 13,-5.8 13,-13v-45c0,-1.7 -1.3,-3 -3,-3c-1.7,0 -3,1.3 -3,3v45c0,3.9 -3.1,7 -7,7h-60c-3.9,0 -7,-3.1 -7,-7v-60c0,-3.9 3.1,-7 7,-7h45c1.7,0 3,-1.3 3,-3c0,-1.7 -1.3,-3 -3,-3z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        
+    </body>
+</html>
+
